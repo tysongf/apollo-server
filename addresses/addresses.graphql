@@ -1,0 +1,15 @@
+type Query {
+   addresses: [Address]
+}
+
+type Address {
+   id: ID!
+   type: String! #shipping / billing
+   line_1: String
+   line_2: String
+   line_3: String
+   city: City!
+   region: Region!
+   country: Country!
+   postal_code: String
+}

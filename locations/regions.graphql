@@ -1,0 +1,10 @@
+type Query {
+   regions: [Region]
+}
+
+type Region {
+   id: ID!
+   name: String!
+   code: String!
+   cities: [City]
+}
